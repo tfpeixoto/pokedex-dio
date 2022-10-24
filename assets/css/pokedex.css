@@ -7,14 +7,23 @@
 }
 
 .pokemon {
-  display: flex;
-  background-color: #49D0B0;
   border-radius: 1rem;
   color: #ffffff;
-  flex-direction: column;
   margin: .5rem;
   min-height: 120px;
   padding: 1rem;
+  transition: all ease-in-out .25s;
+}
+
+.pokemon:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+  transform: scale(1.15);
+}
+
+a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
 
 .pokemon .number {
@@ -27,6 +36,7 @@
 .pokemon .name {
   color: #fff;
   margin-bottom: .25rem;
+  text-transform: capitalize;
 }
 
 .pokemon .detail {
@@ -43,12 +53,13 @@
 }
 
 .pokemon .detail .types .type {
-  background-color: #61e1ca;
+  background-color: rgba(0,0,0,.1);
   border-radius: 1rem;
   color: #fff;
   font-size: .625rem;
   margin: .125rem 0;
   padding: .25rem .5rem;
+  text-align: center;
 }
 
 .pokemon .detail img {
